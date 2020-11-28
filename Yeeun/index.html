@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Question open</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/03f418a479.js"></script>
+</head>
+
+<body>
+    <div class="layout-container">
+        <div class="main">
+            <div class="side_navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <h2>HOME</h2>
+                    </a>
+                </div>
+                <form id="search-google-form" name="searchMain" class="nav-sidebar-form"
+                    action="https://www.google.com/search">
+                    <div class="input-group">
+                        <input type="text" name="qt" class="form-control input-sm" placeholder="Google 검색">
+                        <input type="hidden" name="q">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-sm" type="submit"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <div class="content" role="main">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <a href="index.html">질문게시판</a> > 질문열람<br>
+                <h2>질문 제목</h2>
+                <p><a href="index.html">&nbsp;#python</a>&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-success btn-xs">익명의 병아리</button>
+                </p>
+                <div class="content_out">
+                    <div class="content_code">
+                        #include <'iostream'><br>#include <'vector'><br><br>
+                                using namespace std;<br><br>
+                                vector<int> graph[101];<br>
+                                    int visit[101];<br>
+                                    int cnt;<br>
+                                    int p1, p2;<br>
+                                    bool meet;<br>
+                                    void dfs(int z);<br><br>
+                                    int main(){<br><br>
+                                    int n, r;<br>
+                                    cin >> n;<br>
+                                    cin >> p1 >> p2;<br>
+                                    cin >> r;<br><br>
+                                    dfs(p1);<br>
+                    </div>
+                    <div class="content_question">
+                        dfs가 뭐죠? 흫ㅎ ㅠㅠㅠ모르겟어ㅏ ㅠㅠㅠdfs가 뭐죠? 흫ㅎ ㅠㅠㅠ모르겟어ㅏ
+                        ㅠㅠㅠdfs가 뭐죠? 흫ㅎ ㅠㅠㅠ모르겟어ㅏ ㅠㅠㅠdfs가 뭐죠? 흫ㅎ ㅠㅠㅠ모르겟어ㅏ
+                        ㅠㅠㅠdfs가 뭐죠? 흫ㅎ ㅠㅠㅠ모르겟어ㅏ ㅠㅠㅠ dfs가 뭐죠? 흫ㅎ ㅠㅠㅠ모르겟어
+                        ㅏ ㅠㅠㅠdfs가 뭐죠? 흫ㅎ ㅠㅠㅠ모르겟어ㅏ ㅠㅠㅠdfs가 뭐죠? 흫ㅎ ㅠㅠㅠ모르겟어ㅏ
+                        ㅠㅠㅠs
+                    </div>
+                </div>
+                <div class="answer_part">
+                    <ul class="answer_group">
+                        <li class="list-group-item">
+                            <i class="fa fa-user" aria-hidden="true"> 익명의 코린이</i>
+                            <div class="answer">
+                                인터넷에 검색해보세요<br>
+                                인터넷에 검색해보세요<br>인터넷에 검색해보세요<br>
+                                인터넷에 검색해보세요<br>인터넷에 검색해보세요<br>
+                                인터넷에 검색해보세요<br>인터넷에 검색해보세요<br>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fa fa-user" aria-hidden="true"> 익명의 코수</i>
+                            <div class="answer">
+                                그래프 탐색입니다^^
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="comment">
+                        <form class="writecomment">
+                            <input type="text" name="text" maxlength="300" placeholder="댓글을 입력하세요." class="text">
+                            <button type="button" class="btn btn-default">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
