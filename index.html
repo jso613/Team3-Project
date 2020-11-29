@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>  
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Ask a Question</title>
+
+	<link rel="stylesheet" type="text/css" href="qna.css">
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+	<h2 style="font-size: 30px">질문게시판 글쓰기</h2>
+
+<div class="panel">
+
+	<form action="index.html" method="post" id="form" onsubmit="return postForm()">
+	
+	<fieldset>
+		<div><input type="checkbox" name="익명">익명</div>
+		<div><input type="text" name="title" placeholder="제목을 입력하세요." class="panel-body" id="title"></div>
+		<div><input type="text" name="tag" placeholder="태그를 입력하세요." class="panel-body" id="tag"></div>
+		<div><textarea rows="20" name="question" wrap="physical" class="panel-body question" id="question"></textarea></div>
+		
+<!-- contenteditable="true" placeholder="내용을 입력하세요." spellcheck="false" -->
+		<div><input type ="file" name="file" placeholder="파일을 선택하세요." value="file value"></div>
+		
+	</fieldset>
+
+	<fieldset class="btn">
+	    <a href="index.html" class="btn btn-no" onclick="return confirm('정말로 취소하시겠습니까?')">취소</a>
+	    <input type="submit" class="btn btn-yes" value="등록" id="create">
+	</fieldset>
+		
+
+	</form>
+	</div>
+
+</body>
+</html>
